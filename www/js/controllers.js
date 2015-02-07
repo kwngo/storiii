@@ -13,6 +13,10 @@ angular.module('starter.controllers', [])
     $scope.story = Stories.get($stateParams.storyId);
 })
 
+.controller('StoryRecordingCtrl', function($scope, $stateParams, Stories) {
+    $scope.story = Stories.get($stateParams.storyId);
+})
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
     $scope.chat = Chats.get($stateParams.chatId);
 })

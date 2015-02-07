@@ -64,6 +64,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 controller: 'StoryDetailCtrl'
             }
         }
+    }).state('tab.story-recording', {
+        url: '/story/:storyId/recording/:illustrationId',
+        views: {
+            'tab-stories': {
+                templateUrl: 'templates/story-recording.html',
+                controller: 'StoryRecordingCtrl'
+            }
+        }
     })
 
     .state('tab.friends', {
