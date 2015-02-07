@@ -6,13 +6,13 @@ angular.module('starter.services', [])
     // Some fake testing data
     var stories = [{
         id: 0,
-        title: 'Ben Sparrow',
-        description: 'You on your way?',
+        title: 'Snow White',
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
     }, {
         id: 1,
-        title: 'Ben Sparrow',
-        description: 'You on your way?',
+        title: 'Cinderella',
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
     }];
 
