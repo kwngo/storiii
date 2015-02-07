@@ -1,0 +1,70 @@
+/* ---------------------------------------- */
+/*                 THE GRID                 */
+/* ---------------------------------------- */
+
+.container{
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.container:after, .row:after {
+	content: "";
+	
+	display: table;
+	clear: both;
+}
+
+.row{ margin-left: -30px; } /* --- CHANGE THIS TO .col BORDER SIZE --- */
+
+.col{
+	border-left: 30px solid transparent; /* --- BORDER SIZE = THE FIXED GUTTER WIDTH --- */
+	float: left;
+	display: block;
+	margin-bottom: 35px;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* --- COLUMNS --- */
+
+.one-twelfth{ width: 8.333%; }
+.one-sixth{ width: 16.6669%; }
+.one-fifth{ width: 20%; }
+.one-fourth{ width: 25%; }
+.one-third{ width: 33.3334%; }
+.five-twelfths{ width: 41.666%; }
+.one-half{ width: 50%; }
+.seven-twelfths{ width: 58.333%; }
+.two-thirds{ width: 66.666%; }
+.three-fourths{ width: 75%; }
+.five-sixths{ width: 83.333%; }
+.evelen-twelfths{ width: 91.666%; }
+.full-width{ width: 100%; }
+
+.two-thirds.sb-right{ float: left; }
+.one-third.sb-right{
+	border-left-width: 60px;
+	float: right;
+}
+
+.two-thirds.sb-left{ float: right; }
+.one-third.sb-left{	
+	border-right: 30px solid transparent;
+	float: left
+}
+
+/* --- OFFSETS --- */
+
+.offset1{ margin-left: 8.333%; }
+.offset2{ margin-left: 16.6669%; }
+.offset3{ margin-left: 25%; }
+.offset4{ margin-left: 33.334%; }
+.offset5{ margin-left: 41.666%; }
+.offset6{ margin-left: 50%; }
+.offset7{ margin-left: 58.333%; }
+.offset8{ margin-left: 66.666%; }
+.offset9{ margin-left: 75%; }
+.offset10{ margin-left: 83.333%; }
+.offset11{ margin-left: 91.666%; }
