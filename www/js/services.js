@@ -24,9 +24,9 @@ angular.module('starter.services', [])
         recorded: false
     }, {
         id: 3,
-        title: 'The Henchman and the Bean',
+        title: 'Red Riding Hood',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
-        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/14-color-test_905.jpg',
+        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/05-color-test_905.jpg',
         recorded: true
     }];
 

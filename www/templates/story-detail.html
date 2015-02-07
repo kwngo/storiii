@@ -1,42 +1,42 @@
 <ion-view view-title="{{story.name}}">
     <ion-content class="padding">
-        <div class="container">
-            <div class="row">
-                <div class="col seven-twelfths">
-                    <div id="img_gallery1"></div>
-                    <img ng-src="{{story.image}}" />
-                </div>
-                <div class="col five-twelfths">
-                    <h4>{{story.title}}</h4>
-                    <div class="mar-b-20"></div>
-                    <ul class="stars" data-progtrckr-steps="4">
-                        <li>135 <i class="fa fa-comment"></i>
-                        </li>
-                        <li>1200 <i class="fa fa-heart"></i>
-                        </li>
-                    </ul>
-                    <hr>
-
-                    <div class="mar-b-20"></div>
-                    <!-- GAP -->
-                    <h5>Description</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <div class="mar-b-30"></div>
-                    <!-- GAP -->
-
-                    <ul class="project-details">
-                        <li>
-                            <p><strong>Author: </strong> Barry Scott</p>
-                        </li>
-                        <li>
-                            <p><strong>Price: </strong> $0.99</p>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn large green">Buy now</a>
-                </div>
+        <div class="masonry-wrap filter-wrap">
+            <div class="col one-half">
+                <div id="img_gallery1"></div>
+                <img ng-src="{{story.image}}" />
             </div>
+            <div class="col one-half">
+                <h4>{{story.title}}</h4>
+                <div class="mar-b-20"></div>
+                <ul class="stars" data-progtrckr-steps="4">
+                    <li>135 <i class="fa fa-comment"></i>
+                    </li>
+                    <li>1200 <i class="fa fa-heart"></i>
+                    </li>
+                </ul>
+                <hr>
+
+                <div class="mar-b-20"></div>
+                <!-- GAP -->
+                <h5>Description</h5>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                <div class="mar-b-30"></div>
+                <!-- GAP -->
+
+                <ul class="project-details">
+                    <li>
+                        <p><strong>Author: </strong> Barry Scott</p>
+                    </li>
+                    <li>
+                        <p><strong>Price: </strong> $0.99</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn large green">Buy now</a>
+            </div>
+        </div>
+        </div>
         </div>
         </div>
         </div>
