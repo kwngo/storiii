@@ -9,6 +9,11 @@ angular.module('starter.services', [])
         title: 'Ben Sparrow',
         description: 'You on your way?',
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    }, {
+        id: 1,
+        title: 'Ben Sparrow',
+        description: 'You on your way?',
+        image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
     }];
 
     return {
