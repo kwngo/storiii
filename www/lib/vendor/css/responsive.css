@@ -1,0 +1,78 @@
+/* ---------------------------------------- */
+/*              MEADIA QUERIES              */
+/* ---------------------------------------- */
+
+/* --- WIDTH 1310px --- */
+
+@media only screen and (max-width: 1310px ) {
+	.container{ 
+		width: auto;
+		padding: 0 100px;
+	}
+	
+	#site-header nav ul li .megamenu-inner{ margin: 0 100px; }
+}
+
+/* --- WIDTH 990px --- */
+
+@media only screen and (max-width: 990px) {
+	#site-header nav ul li{ display: none; }
+	#mobile-nav{ display: block; }
+	
+	#site-header nav ul li.search-btn{
+		width: 25%;
+		display: block; 
+	}
+	
+	#logo-header{
+		text-align: center;
+
+		width: 50%;
+	}
+}
+
+/* --- WIDTH 950px --- */
+
+@media only screen and (max-width: 950px) {
+	.one-fourth{ width: 50%; }
+	.two-thirds{ width: 100%; }
+	.one-third.sb-left,.one-third.sb-right{ display: none; }
+	.two-thirds.sb-left,.two-thirds.sb-right{ width: 100%; }
+}
+
+/* --- WIDTH 768px --- */
+
+@media only screen and (max-width: 768px) {	
+	.container{ padding: 0 50px; }
+}
+
+/* --- WIDTH 660px --- */
+
+@media only screen and (max-width: 660px) {
+	.col{ width: 100%;}
+	.offset1, .offset2, .offset3, .offset4,
+	.offset5, .offset6, .offset7, .offset8,
+	.offset9, .offset10, .offset11{ margin-left: 0; }
+	
+	#top-links{ display: none; }
+}
+/* --- WIDTH 480px --- */
+
+@media only screen and (max-width: 480px) {
+	.container{ padding: 0 25px; }
+}
+
+/* --- RETINA --- */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	blockquote.icon:before{ background-image: url(../img/quote-x2.png);	}
+	.selectbox{ background-image: url(../img/mm-icon-x2.png); }
+	.light-header .selectbox{ background-image: url(../img/mm-icon-alt-x2.png); }
+	.meter h4:before{ background-image: url(../img/point-1-x2.png); }
+	.progress-steps li.step-done:after{	background-image: url(../img/tick-x2.png); }
+	.share-icon{ background-image: url(../img/share-icon-x2.png); }
+	.read:after{ background-image: url(../img/read-x2.png); }
+	.post-quote h5{ background-image: url(../img/quote-2-x2.png); }
+	.thumbnails-btn{ background-image: url(../img/thumbnails-icon-x2.png); }
+	.thumbnails-btn:hover{ background-image: url(../img/thumbnails-icon-hover-x2.png); }
+}
