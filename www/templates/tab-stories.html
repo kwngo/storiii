@@ -3,9 +3,29 @@
         <div class="container">
             <div class="row">
                 <ion-list class="masonry-wrap filter-wrap">
-                    <ion-item ng-repeat="story in stories" class="col one-half item web">
+                    <h3>Recorded</h3>
+
+                    <ion-item ng-repeat="story in stories | filter:recorded" class="col one-half item web">
                         <section>
-                            <a href="img/portfolio/730x380-7.jpg" class="img-wrap view" rel="photography">
+                            <a href="#/tab/story/{{story.id}}" class="img-wrap view" rel="photography">
+                                <img src="{{story.image}}" alt="">
+                                <div class="img-overlay">
+                                    <div class="icon-only"><i class="fa fa-eye"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="boxed">
+                                <header>
+                                    <h6><a href="#">{{story.title}}</a><span class="meta-text">Photography</span></h6>
+                                    <p>{{story.description}}</p>
+                                </header>
+                            </div>
+                        </section>
+                    </ion-item>
+                    <h3>Not yet recorded</h3>
+                    <ion-item ng-repeat="story in stories | filter:!recorded" class="col one-half item web">
+                        <section>
+                            <a href="#/tab/story/{{story.id}}" class="img-wrap view" rel="photography">
                                 <img src="{{story.image}}" alt="">
                                 <div class="img-overlay">
                                     <div class="icon-only"><i class="fa fa-eye"></i>

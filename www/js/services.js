@@ -8,29 +8,45 @@ angular.module('starter.services', [])
         id: 0,
         title: 'Snow White',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
-        image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/02-color-test_905.jpg',
+        recorded: true
     }, {
         id: 1,
         title: 'Cinderella',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
-        image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/10-color-test_905.jpg',
+        recorded: false
+    }, {
+        id: 2,
+        title: 'The Henchman and the Bean',
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/14-color-test_905.jpg',
+        recorded: false
+    }, {
+        id: 3,
+        title: 'The Henchman and the Bean',
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        image: 'http://payload139.cargocollective.com/1/6/195090/5090921/14-color-test_905.jpg',
+        recorded: true
     }];
+
 
     return {
         all: function() {
-                return stories;
+            return stories;
+        },
+        remove: function(story) {
+            stories.splice(stories.indexOf(story), 1);
+        },
+        get: function(storyId) {
+            for (var i = 0; i < stories.length; i++) {
+                if (stories[i].id === parseInt(storyId)) {
+                    return stories[i];
+                }
             }
-            // remove: function(chat) {
-            //     stories.splice(stories.indexOf(chat), 1);
-            // },
-            // get: function(chatId) {
-            //     for (var i = 0; i < chats.length; i++) {
-            //         if (chats[i].id === parseInt(chatId)) {
-            //             return chats[i];
-            //         }
-            //     }
-            //     return null;
-            // }
+            return null;
+        }
+
     }
 })
 

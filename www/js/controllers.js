@@ -4,6 +4,13 @@ angular.module('starter.controllers', [])
 
 .controller('StoriesCtrl', function($scope, Stories) {
     $scope.stories = Stories.all();
+    $scope.recorded = function(story) {
+        return story.recorded;
+    }
+})
+
+.controller('StoryDetailCtrl', function($scope, $stateParams, Stories) {
+    $scope.story = Stories.get($stateParams.storyId);
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
