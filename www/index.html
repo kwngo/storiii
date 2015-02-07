@@ -7,6 +7,17 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/vendor/animate.min.css" rel="stylesheet">
+    <link href="lib/vendor/elements.css" rel="stylesheet">
+    <link href="lib/vendor/font-awesome.css" rel="stylesheet">
+    <link href="lib/vendor/grid.css" rel="stylesheet">
+    <link href="lib/vendor/header-footer.css" rel="stylesheet">
+    <link href="lib/vendor/linecons.css" rel="stylesheet">
+    <link href="lib/vendor/main.css" rel="stylesheet">
+    <link href="lib/vendor/owl.carousel.css" rel="stylesheet">
+    <link href="lib/vendor/reset.css" rel="stylesheet">
+    <link href="lib/vendor/responsive.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -15,6 +26,9 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/js/jquery-1.10.2.js"></script>
+    <script src="lib/js/responsiveslides.min.js"></script>
+    <script src="lib/js/jquery.min.map"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -24,13 +38,17 @@
 </head>
 
 <body ng-app="starter">
+    <div class="container">
+        <h1>Storiii</h1>
+    </div>
+    <form method="post" id="contact-form">
+        <input type="text" id="name" name="name" onfocus="if(this.value == 'Your Full Name') { this.value = ''; }" value="Your Full Name" aria-required="true" required="">
+        <input type="text" id="email" name="email" onfocus="if(this.value == 'Your Email Address') { this.value = ''; }" value="Your Email Address" aria-required="true" required="">
+        <input type="text" id="subject" name="subject" onfocus="if(this.value == 'Subject') { this.value = ''; }" value="Subject" aria-required="true" required="">
+        <textarea name="message"></textarea>
 
-    <ion-pane>
-        <ion-header-bar class="bar-stable">
-            <h1 class="title">Storiii</h1>
-        </ion-header-bar>
-        <ion-content>
-        </ion-content>
+        <input type="submit" value="Send" class="btn red">
+    </form>
     </ion-pane>
 </body>
 
