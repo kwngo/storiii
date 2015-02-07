@@ -17,6 +17,16 @@
     <link href="lib/vendor/css/owl.carousel.css" rel="stylesheet">
     <link href="lib/vendor/css/reset.css" rel="stylesheet">
     <link href="lib/vendor/css/responsive.css" rel="stylesheet">
+    <link href="lib/vendor/css/login.css" rel="stylesheet">
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -50,6 +60,159 @@
       have templates inline in this html file if you'd like).
     -->
     <ion-nav-view></ion-nav-view>
+
+    <!-- JAVASCRIPT -->
+    <script src="lib/vendor/js/jquery-1.10.2.js"></script>
+    <script src="lib/vendor/js/wow.min.js"></script>
+    <script>
+      "use strict";
+      new WOW().init();
+    </script>
+    <script src="lib/vendor/js/plugins.js"></script>
+    <script src="lib/vendor/js/modernizr.js"></script>
+    <!--[if lt IE 8]>
+    <script src="js/ie8.js"></script>
+    <![endif]-->
+    <script src="lib/vendor/js/desoslide.min.js"></script>
+    <script>
+      $(window).load(function() {
+        "use strict";
+          $('#img_gallery1').desoSlide({
+            thumbs: $('ul.thumbs1 li > a'),
+            overlay: 'none'
+        });
+      });
+    </script>
+    <script src="lib/vendor/js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function() {
+        "use strict";
+        // PRODUCT SLIDER
+
+        $('.product-slider').owlCarousel({
+            center: true,
+            loop: true,
+            margin: 100,
+            items: 2
+
+        });
+
+        // MULTI-SLIDER
+        var owl1 = $(".multi-slider");
+
+        $('.multi-slider').owlCarousel({
+            margin: 30,
+            center: true,
+            loop: true,
+
+            responsive:{
+              1000:{
+                    items:4
+                },
+                600:{
+                    items:2,
+                },
+                550:{
+                    items:1,
+                    center: false,
+                    stagePadding: 140
+                },
+                400:{
+                    items:1,
+                    center: true,
+                    stagePadding: 40
+                }
+            }
+        });
+
+        $(".multi-slider-nav .next").click(function(){
+          owl1.trigger('next.owl');
+        })
+        $(".multi-slider-nav .prev").click(function(){
+          owl1.trigger('prev.owl');
+        })
+
+        // FOOTER-CAROUSEL
+        var owl2 = $("#footer-carousel");
+
+        $("#footer-carousel").owlCarousel({
+          slideSpeed: 300,
+          autoHeight: true,
+          loop:true,
+          items : 1
+        });
+
+
+        $(".footer-nav .next").click(function(){
+          owl2.trigger('next.owl');
+        })
+        $(".footer-nav .prev").click(function(){
+          owl2.trigger('prev.owl');
+        })
+      });
+    </script>
+    <script src="lib/vendor/js/event.move.js"></script>
+    <script src="lib/vendor/js/twentytwenty.js"></script>
+    <script>
+      $(window).load(function(){
+        "use strict";
+        $("#container1").twentytwenty();
+      });
+    </script>
+    <script src="lib/vendor/js/responsiveslides.min.js"></script>
+    <script>
+      $(function() {
+        "use strict";
+        $(".rslides").responsiveSlides({
+          auto: false,
+          speed: 750,
+          nav: true,
+          prevText: "&#xf104",
+          nextText: "&#xf105"
+        });
+      });
+    </script>
+    <script src="lib/vendor/js/masonry-docs.min.js"></script>
+    <script>
+      $(function() {
+        "use strict";
+        var $container = $('.masonry-wrap');
+        // initialize Masonry after all images have loaded
+        $container.imagesLoaded(function() {
+          $container.masonry({
+            itemSelector: '.item',
+          });
+        });
+      });
+    </script>
+    <script src="lib/vendor/js/view.min.js?auto"></script>
+    <script src="lib/vendor/js/sudoslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        "use strict";
+          var sudoSlider = $("#slider").sudoSlider({
+          controlsFade: false,
+          customLink: '.custom',
+          numeric: false,
+          responsive: true,
+          speed: 800,
+          touch: true
+          });
+
+          $(".prevBtn, .nextBtn, #slider").hover(
+                function () {
+                    // Mousein
+                    $(".prevBtn, .nextBtn").stop().fadeTo(200, 1);
+                },
+                function () {
+                    //Mouse out
+                    $(".prevBtn, .nextBtn").stop().fadeTo(200, 0);
+                }
+            );
+
+            $(".prevBtn, .nextBtn").stop().fadeTo(0, 0);
+      });
+    </script>
 </body>
 
 </html>
