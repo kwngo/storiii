@@ -10,3 +10,11 @@
     padding: 1em;
     bottom: 2em;
 }
+.btn {
+    border: 0;
+    border-radius: 4px;
+    text-transform: none;
+    &:hover {
+        opacity: 0.8;
+    }
+}
