@@ -1,1 +1,12 @@
 /* Empty. Add your own CSS if you like */
+
+.illustration {
+    position: relative;
+}
+.illustration-text {
+    position: absolute;
+    color: #fff;
+    background: rgba(47, 193, 153, 0.8);
+    padding: 1em;
+    bottom: 2em;
+}

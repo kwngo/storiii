@@ -7,6 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
+
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -65,11 +66,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             }
         }
     }).state('tab.story-recording', {
-        url: '/story/:storyId/recording/:illustrationId',
+        url: '/story/:storyId/recording',
         views: {
             'tab-stories': {
                 templateUrl: 'templates/story-recording.html',
                 controller: 'StoryRecordingCtrl'
+            }
+        }
+    }).state('tab.story-illustration', {
+        url: '/story/:storyId/illustrations/:illustrationId',
+        views: {
+            'tab-stories': {
+                templateUrl: 'templates/story-illustration.html',
+                controller: 'StoryIllustrationsCtrl'
             }
         }
     })

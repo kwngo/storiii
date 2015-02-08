@@ -1,4 +1,4 @@
-<ion-view view-title="{{story.name}}">
+<ion-view view-title="{{story.title}}">
     <ion-content class="padding">
         <div class="masonry-wrap filter-wrap">
             <div class="col one-half">
@@ -24,17 +24,7 @@
                 <div class="mar-b-30"></div>
                 <!-- GAP -->
 
-                <ul class="project-details">
-                    <li>
-                        <p><strong>Author: </strong> Barry Scott</p>
-                    </li>
-                    <li>
-                        <p><strong>Price: </strong> $0.99</p>
-                    </li>
-                </ul>
-
-                <a href="#" class="btn large green">Buy now</a>
-                <a href="#/story/0/recording" class="btn large green">Start recording</a>
+                <a href="#tab/story/{{story.id}}/recording" class="btn large green">Start recording</a>
 
             </div>
         </div>

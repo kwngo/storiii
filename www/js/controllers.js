@@ -17,6 +17,19 @@ angular.module('starter.controllers', [])
     $scope.story = Stories.get($stateParams.storyId);
 })
 
+.controller('StoryIllustrationsCtrl', function($scope, $location, $stateParams, Stories) {
+    $scope.story = Stories.get($stateParams.storyId);
+    $scope.illustration = $scope.story.illustrations[$stateParams.illustrationId];
+
+    $scope.onSwipeRight = function() {
+        $location.path('tab/story/' + $stateParams.storyId + '/illustrations/' + (parseInt($stateParams.illustrationId) - 1))
+    }
+
+    $scope.onSwipeLeft = function() {
+        $location.path('tab/story/' + $stateParams.storyId + '/illustrations/' + (parseInt($stateParams.illustrationId) + 1))
+    }
+})
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
     $scope.chat = Chats.get($stateParams.chatId);
 })

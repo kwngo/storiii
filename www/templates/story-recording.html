@@ -1,0 +1,21 @@
+<ion-view view-title="{{story.title}}-recording">
+    <ion-content class="padding">
+        <article ng-repeat="page in story.illustrations" class="product2">
+            <a href="#" class="img-wrap view" rel="shop">
+                <img src="{{story.illustrations[story.illustrations.indexOf(page)]}}" />
+                <div class="img-overlay">
+                    <div class="icon-only"><i class="fa fa-eye"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="right">
+                <a href="#/tab/story/{{story.id}}/illustrations/{{story.illustrations.indexOf(page)}}" class="btn small grey-outline"><span>Go to page</span></a>
+                <p><a href="#">You have not recorded this page yet.</a>
+                </p>
+            </div>
+            <header>
+                <h2>Page {{story.illustrations.indexOf(page)}}</h2>
+                <p></p>
+            </header>
+    </ion-content>
+</ion-view>
