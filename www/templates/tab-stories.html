@@ -1,7 +1,6 @@
 <ion-view view-title="Stories">
     <ion-content>
         <ion-list class="masonry-wrap filter-wrap">
-            <h3>Recorded</h3>
             <ion-item ng-repeat="story in stories | filter:recorded" class="col one-half item web">
                 <section>
                     <a href="#/tab/story/{{story.id}}" class="img-wrap view" rel="photography">
@@ -19,7 +18,6 @@
                     </div>
                 </section>
             </ion-item>
-            <h3>Not yet recorded</h3>
             <ion-item ng-repeat="story in stories | filter:!recorded" class="col one-half item web">
                 <section>
                     <a href="#/tab/story/{{story.id}}" class="img-wrap view" rel="photography">
