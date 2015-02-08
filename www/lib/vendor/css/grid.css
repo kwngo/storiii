@@ -9,7 +9,7 @@
 
 .container:after, .row:after {
 	content: "";
-	
+
 	display: table;
 	clear: both;
 }
@@ -17,11 +17,10 @@
 .row{ margin-left: -30px; } /* --- CHANGE THIS TO .col BORDER SIZE --- */
 
 .col{
-	border-left: 30px solid transparent; /* --- BORDER SIZE = THE FIXED GUTTER WIDTH --- */
-	float: left;
+		float: left;
 	display: block;
 	margin-bottom: 35px;
-    
+
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -50,7 +49,7 @@
 }
 
 .two-thirds.sb-left{ float: right; }
-.one-third.sb-left{	
+.one-third.sb-left{
 	border-right: 30px solid transparent;
 	float: left
 }
